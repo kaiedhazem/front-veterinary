@@ -1,0 +1,17 @@
+table, th, td {
+    
+    border-collapse: collapse;
+  }
+
+th, tr, td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}  
+
+th{
+    background-color: darkgrey;
+}
+
+tr:hover{
+    background-color: aliceblue;
+}

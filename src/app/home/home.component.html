@@ -1,0 +1,19 @@
+<div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>weight</th>
+      <th>category</th>
+      <th>Entry Date</th>
+    </tr>
+    <tr *ngFor="let pet of pets">
+      <td>{{pet.id}}</td>
+      <td>{{pet.name}}</td>
+      <td>{{pet.weight}}</td>
+      <td>{{pet.category}}</td>
+      <td>{{pet.entryDate}}</td>
+    </tr>
+  </table>
+</div>
+
