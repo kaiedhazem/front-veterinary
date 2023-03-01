@@ -1,19 +1,30 @@
+<div class = "row">
+  <h2> pets List</h2>
+  <button class = "btn btn-success"> Add</button>
+</div>
 <div>
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>weight</th>
-      <th>category</th>
-      <th>Entry Date</th>
-    </tr>
+<table class = "table table-striped table-bordered">
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>weight</th>
+        <th>category</th>
+        <th>Entry Date</th>
+        <th> Actions</th>
+      </tr>
+  </thead>
+  <tbody>
     <tr *ngFor="let pet of pets">
       <td>{{pet.id}}</td>
       <td>{{pet.name}}</td>
       <td>{{pet.weight}}</td>
       <td>{{pet.category}}</td>
       <td>{{pet.entryDate}}</td>
-    </tr>
-  </table>
-</div>
-
+          <td>
+              <button class = "btn btn-primary"> Update</button>
+              <button (click)="delete(pet.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+          </td>
+      </tr>
+  </tbody>
+</table>

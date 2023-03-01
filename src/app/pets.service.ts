@@ -14,16 +14,16 @@ export class PetsService {
   getPets(): Observable<any> {
     return this.http.get(API_URL + 'pets', { responseType: 'json' });
   }
-/*
+
   addPet(data : any): Observable<any> {
-    return this.http.post<any>(API_URL + 'add', data, { headers });
+    return this.http.post<any>(API_URL + 'pets', data );
   }
 
-  updateFormation(data : any): Observable<any> {
-    return this.http.put<any>(API_URL + 'update', data, { headers });
+  updatePet(data : any): Observable<any> {
+    return this.http.put<any>(API_URL + 'pets', data);
   }
 
-  deleteFormation(id : number): Observable<any> {
-    return this.http.delete<any>(API_URL + 'delete/'+id, { headers });
-  }*/
+  deletePet(id : number): Observable<any> {
+    return this.http.delete<any>(API_URL + 'pets/'+id);
+  }
 }
