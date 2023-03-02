@@ -16,7 +16,7 @@ export class PetsService {
   }
 
   addPet(data : any): Observable<any> {
-    return this.http.post<any>(API_URL + 'pets', data );
+    return this.http.post<any>(API_URL + 'pets', data, { responseType: 'json' } );
   }
 
   updatePet(data : any): Observable<any> {

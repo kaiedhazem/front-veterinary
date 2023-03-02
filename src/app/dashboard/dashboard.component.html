@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+  
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-nav-list >
+        <a class="liste" mat-list-item routerLink="/home" ><mat-icon>home</mat-icon>  Home</a>
+        <a class="liste"  mat-list-item routerLink="/home/pet" > <mat-icon>account_box</mat-icon>  Pets</a>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <div >
+        <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
